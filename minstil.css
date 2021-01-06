@@ -12,43 +12,43 @@ body {
   grid-column-gap: 5px;
   text-align: center;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 .header {
-  grid-column:1/12;
-  grid-row: auto;
+  grid-column:1/13;
   background-color: dimgrey;
   font-size: 12px;
   color: cornsilk;
 }
 .menuleft {
   display: grid;
-  grid-column: 1/2;
-  grid-row: 2/10;
+  grid-column: 1/2; 
   background-color: #020318;
+  height: 1px;
 }
+/*            Denne blir ikkje lengre brukt så eg har deaktivert den inntil videre.
 .contentshowcaseoverskrift {
   display: grid;
   grid-row: 2;
   grid-column: 2/12;
   background-color: #020318;
   color: cornsilk;
-} 
+} */
 .contentshowcase {
   display: grid;
   grid-column: 2/12;
-  grid-row: 3/40;
   background-color: #020318;
   color: cornsilk;
   padding-top: 2px;
 }
-.videospiller {
-  margin-bottom: 350px;
-}
-.rapport {
-  margin-bottom: 100px;
-}
 
+.fagvalg {
+  display: grid;
+  grid-column: 2/12;
+  background-color: #020318;
+  color: cornsilk;
+  padding: 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
 
 /* dropdown ------------------------------------------*/
 .dropdown {
@@ -60,7 +60,7 @@ body {
   color: cornsilk;
   cursor: pointer;
   border-style: hidden;
-  width: 249px;
+  width: 120px;
   display: grid;
 }
 .dropdown-content {
@@ -68,6 +68,7 @@ body {
   display: none;
   width: 100%;
   overflow: auto;
+  background-color: #020318;
   z-index: 1;
 }
 .dropdown-content a {

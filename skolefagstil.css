@@ -31,7 +31,7 @@ body {
 .fagvalg {
   display: grid;
   grid-column: 2/12;
-  grid-row: 2/40;
+  grid-row: 2/12;
   background-color: #020318;
   color: cornsilk;
   padding-top: 20px;
