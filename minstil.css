@@ -17,7 +17,26 @@ body {
   grid-column:1/13;
   background-color: dimgrey;
   font-size: 12px;
-  color: cornsilk;
+  color: black;
+}
+.headersub {
+  grid-column: 2/12;
+  background-color: dimgrey;
+  font-size: 12px;
+  color: black;
+}
+.homebutton {
+  grid-column: 1/2;
+  background-color: dimgrey;
+  font-size: 12px;
+  padding-top: 20px;
+}
+.homebuttonreflection {
+  grid-column: 12/13;
+  background-color: dimgrey;
+  font-size: 12px;
+  color: dimgrey;
+  padding-top: 20px;
 }
 .menuleft {
   display: grid;
