@@ -69,7 +69,7 @@ body {
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-/* dropdown ------------------------------------------*/
+/* dropdownstart ------------------------------------------*/
 .dropdown {
   display: inline;
   position: relative;
@@ -104,6 +104,6 @@ body {
 .dropdown:hover .dropbtn {
   background-color: chocolate;
 }
-/* dropdown ------------------------------------------*/
+/* dropdownslutt ------------------------------------------*/
 
 
