@@ -32,7 +32,12 @@ h1 { /*Animasjon til overskriften til siden som gjør at teksten rulerer mellom 
 }
 @keyframes overskrift_animasjon { /*Definerer keyframes til overskrift_animasjon i "h1" som ligger over*/
   from {color:white;}
-  to {color: #14172F;}
+  to {
+    background-image: url("Skulenettside_Content_Archive/blue_shingles.jpg");
+    background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
 }
 .homebutton { /*Knapp som tar deg tilbake til forsiden fra undersidene */
   grid-column: 1/2;
