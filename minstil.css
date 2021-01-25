@@ -30,7 +30,7 @@ h1 { /*Animasjon til overskriften til siden som gjør at teksten rulerer mellom 
 	animation: overskrift_animasjon 7s infinite; /* Henter animasjon fra (((?DEN?))) som ligger under og spiller den uendelig mangen ganger*/
   animation-direction: alternate; /*Hvordan den kjører gjennom overgangen fra hvit til blå*/
 }
-@keyframes overskrift_animasjon { /*Definerer keyframes til overskrift_animasjon til "h1" som ligger over*/
+@keyframes overskrift_animasjon { /*Definerer keyframes til overskrift_animasjon i "h1" som ligger over*/
   from {color:white;}
   to {color: #14172F;}
 }
