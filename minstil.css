@@ -3,7 +3,7 @@
 
 body {
   background-image: url("Skulenettside_Content_Archive/blue_shingles.jpg");
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 } 
 
 .main {
@@ -13,38 +13,47 @@ body {
   text-align: center;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
-.header {
+.header { /*Header til forsiden*/
   grid-column:1/13;
   background-color: dimgrey;
   font-size: 12px;
   color: black;
 }
-.headersub {
+.headersub { /*Header til undersidene*/
   grid-column: 2/12;
   background-color: dimgrey;
   font-size: 12px;
   color: black;
 }
-.homebutton {
+h1 { /*Animasjon til overskriften til siden som gjør at teksten rulerer mellom hvit og den mørkeblå fargen som finnes på andre steder på siden*/
+  animation-timing-function: linear;
+	animation: overskrift_animasjon 7s infinite; /* Henter animasjon fra (((?DEN?))) som ligger under og spiller den uendelig mangen ganger*/
+  animation-direction: alternate; /*Hvordan den kjører gjennom overgangen fra hvit til blå*/
+}
+@keyframes overskrift_animasjon { /*Definerer keyframes til overskrift_animasjon til "h1" som ligger over*/
+  from {color:white;}
+  to {color: #14172F;}
+}
+.homebutton { /*Knapp som tar deg tilbake til forsiden fra undersidene */
   grid-column: 1/2;
   background-color: dimgrey;
   font-size: 12px;
   padding-top: 20px;
 }
-.homebuttonreflection {
+.homebuttonreflection { /*Estetisk element for symmetri*/
   grid-column: 12/13;
   background-color: dimgrey;
   font-size: 12px;
   color: dimgrey;
   padding-top: 20px;
 }
-.menuleft {
+.menuleft { /* Definerer området der dropdown menyen ligger */
   display: grid;
   grid-column: 1/2; 
   background-color: #020318;
   height: 1px;
 }
-/*            Denne blir ikkje lengre brukt så eg har deaktivert den inntil videre.
+/*            Denne blir ikkje brukt lengre så den er deaktivert inntil videre.
 .contentshowcaseoverskrift {
   display: grid;
   grid-row: 2;
@@ -52,7 +61,7 @@ body {
   background-color: #020318;
   color: cornsilk;
 } */
-.contentshowcase {
+.contentshowcase { /*Viser det aller nyeste som er lagt ut. Øverst på fremsiden */
   display: grid;
   grid-column: 2/12;
   background-color: #020318;
@@ -60,8 +69,9 @@ body {
   padding-top: 2px;
 }
 
-.fagvalg {
+.fagvalg { /*menyen med fagvalg på fremsiden vist som 4 bilder som representerer de forskjellige fagene */
   display: grid;
+  font-size: 17px;
   grid-column: 2/12;
   background-color: #020318;
   color: cornsilk;
@@ -69,7 +79,8 @@ body {
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-/* dropdownstart ------------------------------------------*/
+
+/* dropdown knapp start ------------------------------------------*/
 .dropdown {
   display: inline;
   position: relative;
@@ -104,6 +115,6 @@ body {
 .dropdown:hover .dropbtn {
   background-color: chocolate;
 }
-/* dropdownslutt ------------------------------------------*/
+/* dropdown knapp slutt ------------------------------------------*/
 
 
