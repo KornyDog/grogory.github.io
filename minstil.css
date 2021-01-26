@@ -3,7 +3,7 @@
 
 body {
   background-image: url("Skulenettside_Content_Archive/blue_shingles.jpg");
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 } 
 
 .main {
@@ -25,7 +25,7 @@ body {
   font-size: 12px;
   color: black;
 }
-h1 { /*Animasjon til overskriften til siden som gjør at teksten rulerer mellom hvit og den mørkeblå fargen som finnes på andre steder på siden*/
+h1 { /*Animasjon til overskriften til siden som gjør at teksten rulerer mellom hvit og å være gjennomsiktig til bakgrunnen*/
   animation-timing-function: linear;
 	animation: overskrift_animasjon 7s infinite; /* Henter animasjon fra (((?DEN?))) som ligger under og spiller den uendelig mangen ganger*/
   animation-direction: alternate; /*Hvordan den kjører gjennom overgangen fra hvit til blå*/
